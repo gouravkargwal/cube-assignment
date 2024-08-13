@@ -14,7 +14,7 @@ const mockCustomers: Customer[] = Array.from({ length: 1000 }, (_, index) => ({
 }));
 
 const App = () => {
-  const [customers, setCustomers] = useState<Customer[]>(mockCustomers);
+  const [customers] = useState<Customer[]>(mockCustomers);
   const [selectedCustomerId, setSelectedCustomerId] = useState<number | null>(
     null
   );
